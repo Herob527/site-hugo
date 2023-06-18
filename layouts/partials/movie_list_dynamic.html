@@ -8,12 +8,7 @@
     const baseUrl = "https://qtut2ng4.apicdn.sanity.io";
     const query = "*%5B_type%20%3D%3D%20'movie'%5D%20%7B%0A%20%20title%0A%7D";
     const fullUrl = `${baseUrl}/v2021-10-21/data/query/production?query=${url}`;
-    fetch(fullUrl, {
-      headers: {
-        Authorization:
-          "Bearer sklv6yJFk4oHEGMZIYZR61mSyq9PaPZs7YfXtXFtnByrdp1GXgjHhTImY4vAczBPH2KvURFj0RqaWWx3JzmLG22r8fY2pnbJOiVBQFvalud2vis3Mzqxq32RePksx9j9TuAbx1ygN5IORCXJIBDhHasXwbh4JCZ9bM7PlCcxXfeHJtVkuwWj",
-      },
-    })
+    fetch(fullUrl, {})
       .then((res) => res.json())
       .then((data) => {
         const moviesContainter = document.querySelector("#movies");
