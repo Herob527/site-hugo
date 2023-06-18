@@ -1,0 +1,11 @@
+<div>
+  <b> Static </b>
+  {{ $base_url := "https://qtut2ng4.api.sanity.io" }} {{ $query :=
+  "*%5B_type%20%3D%3D%20'movie'%5D%20%7B%0A%20%20title%0A%7D" }} {{ $movies :=
+  getJSON $base_url "/v2021-10-21/data/query/production?query=" $query}} {{
+  range $movies.result }}
+
+  <p>{{ .title }}</p>
+
+  {{ end }}
+</div>
