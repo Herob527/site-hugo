@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herob527/site-hugo.git"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "Szymon Wrzos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Herob527/site-hugo/issues"
+  },
+  "homepage": "https://github.com/Herob527/site-hugo#readme",
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}
